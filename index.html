@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <!-- ==================================================== -->
+  <!-- Frontend: Vladimir Demyanchuk (wovka.home@gmail.com) -->
+  <!-- ==================================================== -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Calendar</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="header__control">
+          <div class="header__column-btns">
+            <button data-add-quick class="header__column-btn">
+              Добавить
+              <span class="quick-add-event">
+                <div class="quick-add-event__row"><i data-close-popup></i></div>
+                <div class="quick-add-event__row">
+                  <input
+                    type="text"
+                    id='quick_add'
+                    placeholder="25 ноября, Кутеж, Серж"
+                    value=""
+                  />
+                </div>
+                <div class="quick-add-event__row">
+                  <input data-create-quickevent type="button" value="Создать" />
+                </div>
+              </span>
+            </button>
+            <button data-update class="header__column-btn">Обновить</button>
+          </div>
+          <div class="header__column-search search">
+            <input type="button" value="" />
+            <label for="">
+              <input type="search" name="search" placeholder="Поиск" value="" />
+              <div data-search class="search__list">
+                <ul>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li>5</li>
+                  <li>6</li>
+                  <li>7</li>
+                  <li>8</li>
+                  <li>9</li>
+                  <li>10</li>
+                  <li>11</li>
+                  <li>12</li>
+                  <li>13</li>
+                  <li>14</li>
+                  <li>15</li>
+                  <li>16</li>
+                  <li>17</li>
+                  <li>18</li>
+                  <li>19</li>
+                  <li>20</li>
+                </ul>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- / HEADER -->
+
+    <!-- MAIN -->
+    <main class="main">
+      <div class="container">
+        <div class="main__row">
+          <div class="main__month">
+            <button data-btn-prev>
+              <svg>
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </button>
+            <h1>Ноябрь 2021</h1>
+            <button data-btn-next>
+              <svg>
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <button data-current-day>Сегодня</button>
+        </div>
+        <div class="main__row table">
+        </div>
+      </div>
+    </main>
+    <!-- / MAIN -->
+
+    <footer class="footer">
+      <p>Ссылка на исходник: <a href="#!">hfgsdhjfdshsjsdsdhj</a></p>
+    </footer>
+
+    <svg display="none">
+      <symbol id="arrow" viewBox="0 0 20 20">
+        <path
+          d="M15.1158 8.52066L6.24034 2.46262C5.83045 2.18266 5.41746 2.03448 5.07419 2.03448C4.41053 2.03448 4 2.56553 4 3.45443V16.5476C4 17.4355 4.41002 17.9655 5.07212 17.9655C5.41591 17.9655 5.82231 17.8172 6.2331 17.5365L15.1127 11.4786C15.6838 11.0883 16 10.5632 16 9.99929C16.0001 9.43575 15.6875 8.91076 15.1158 8.52066Z"
+        />
+      </symbol>
+    </svg>
+
+    <!-- SCRIPTS -->
+    <script src="js/index.js"></script>
+    <!-- / SCRIPTS -->
+  </body>
+</html>
